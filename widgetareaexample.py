@@ -44,7 +44,7 @@ Builder.load_string('''
 
 ''')
 
-class WidgetaTestApp(App):
+class WidgetAreaTestApp(App):
     def build(self):
         return MyBoxLayout()
 
@@ -63,5 +63,5 @@ class AnotherCustomColorButton(Button):
     
 if __name__ == '__main__':
     kwad.attach()
-    WidgetaTestApp().run()
+    WidgetAreaTestApp().run()
     
