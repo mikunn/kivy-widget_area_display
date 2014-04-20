@@ -1,3 +1,14 @@
+'''
+This module extends the Kivy library's Widget class with a method
+that can be used to quickly draw rectangles around widgets to
+see the space they are using. This is helpful for debugging
+layout design errors
+
+'''
+
+__author__ = 'Mika Kunnas'
+__version__ = '1.0.2'
+
 from kivy.uix.widget import Widget
 from kivy.graphics.vertex_instructions import Rectangle
 from kivy.graphics.context_instructions import Color
@@ -55,13 +66,13 @@ def show_area(self, color='green', alpha=0.5, group=None):
         Color(*rgba)
         self.area = Rectangle(pos=self.pos, size=self.size)
     
-    self.bind(pos=self.update_rect)
-    self.bind(size=self.update_rect)
+    self.bind(pos=self.update_area)
+    self.bind(size=self.update_area)
 
 def update_area(self, *args):
     self.area.pos = self.pos
     self.area.size = self.size
 
 def attach():
-    Widget.update_rect = update_area
+    Widget.update_area = update_area
     Widget.show_area = show_area

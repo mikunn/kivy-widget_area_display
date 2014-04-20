@@ -12,21 +12,21 @@ Builder.load_string('''
     
     GreenLabel:
         text: 'GreenLabel'
-        canvas: self.show_area()
+        a: self.show_area()
         
     BlueLabel:
         text: 'BlueLabel'
-        canvas: self.show_area(color='b')
+        a: self.show_area(color='b')
     
     GridLayout:
         rows: 1
-        canvas: self.show_area(color='orange', alpha=1, group='before')
+        a: self.show_area('o', alpha=1, group='before')
         
         CustomColorLabel:
             size_hint: None, None
             size: 200, 40
             text: 'CustomColorLabel'
-            canvas: self.show_area(color=(.2, .7, .8, 1))
+            a: self.show_area(color=(.2, .7, .8, 1))
         
         CustomColorButton:
             size_hint: None, None
@@ -44,7 +44,7 @@ Builder.load_string('''
 
 ''')
 
-class WidgetAreaTestApp(App):
+class WidgetaTestApp(App):
     def build(self):
         return MyBoxLayout()
 
@@ -63,5 +63,5 @@ class AnotherCustomColorButton(Button):
     
 if __name__ == '__main__':
     wadisp.attach()
-    WidgetAreaTestApp().run()
+    WidgetaTestApp().run()
     
