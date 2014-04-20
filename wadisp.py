@@ -5,7 +5,7 @@ from kivy.graphics.context_instructions import Color
 class InvalidColor(Exception):
     pass
 
-def show_widget_area(self, color='green', alpha=0.5, group=None):
+def display_widget_area(self, color='green', alpha=0.5, group=None):
     '''
     Draws a rectangle on the widget's canvas 
     to display its position and proportions.
@@ -64,4 +64,4 @@ def update_area(self, *args):
 
 def attach():
     Widget.update_rect = update_area
-    Widget.show_widget_area = show_widget_area
+    Widget.display_widget_area = display_widget_area
