@@ -7,7 +7,7 @@ layout design errors
 '''
 
 __author__ = 'Mika Kunnas'
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 
 from kivy.uix.widget import Widget
 from kivy.graphics.vertex_instructions import Rectangle
