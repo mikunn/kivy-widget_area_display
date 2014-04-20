@@ -44,12 +44,12 @@ Note that the 'a' in the previous examples is just a custom attribute and it can
 
 ## Installation
 
-Put the `wadisp.py` file either into your Kivy project directory or into your Python directory's /Lib/site-packages dir.
+Put the `kwad.py` file either into your Kivy project directory or into your Python directory's /Lib/site-packages dir.
 
 ## Usage
 
-1. Import it into your app with `import wadisp`
-2. Call `wadisp.attach()` (a good place to run it is before you call your app's run() method)
+1. Import it into your app with `import kwad`
+2. Call `kwad.attach()` (a good place to run it is before you call your app's run() method)
 3. Call `self.show_area()` inside the class/object whose area you want to be displayed.
   * You can call it in Python side or using the kv language
   * By default, this sets the color to be green
@@ -59,13 +59,13 @@ See the widgetareaexample.py for a comprehensive example of usage.
 
 ## API
 
-#### `wadisp.attach()`
+#### `kwad.attach()`
 
 This function gives the Kivy's Widget class a new method called `show_area()` which is from that point on available for all widgets. You must call this function before using the `show_area()` method.
 
 #### `show_area(color='green', alpha=0.5, group=None)`
 
-After attaching this method with `wadisp.attach()`, you can call `self.show_area()` inside a widget to draw a rectangle around it.
+After attaching this method with `kwad.attach()`, you can call `self.show_area()` inside a widget to draw a rectangle around it.
 
 ##### Parameters
 
