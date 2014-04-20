@@ -3,7 +3,7 @@ from kivy.lang import Builder
 
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
-import wadisp
+import kwad
 
 Builder.load_string('''
 
@@ -62,6 +62,6 @@ class AnotherCustomColorButton(Button):
         self.show_area(color=(0.7, 0.7, 0.3), alpha=0.8, group='after')
     
 if __name__ == '__main__':
-    wadisp.attach()
+    kwad.attach()
     WidgetaTestApp().run()
     

@@ -7,7 +7,7 @@ layout design errors
 '''
 
 __author__ = 'Mika Kunnas'
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 
 from kivy.uix.widget import Widget
 from kivy.graphics.vertex_instructions import Rectangle
@@ -26,8 +26,8 @@ def show_area(self, color='green', alpha=0.5, group=None):
     
     color_names = {'blue': [0, 0, 1],
                    'cyan': [0, 1, 1],
-                   'green': [0, 1, 0],
                    'fuchsia': [1, 0, 1],
+                   'green': [0, 1, 0],
                    'orange': [1, 165/max_, 0],
                    'pink': [1, 192/max_, 203/max_],
                    'red': [1, 0, 0],
