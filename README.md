@@ -2,6 +2,10 @@
 
 Kivy Widget Area Display is a Python module to help displaying the area of a Kivy widget for solving layout issues.
 
+## Foreword
+
+I got the initial idea of layout bug fixing from Alexander Taylor's excellent [Kivy tutorials] (http://inclem.net/pages/kivy-crash-course/). They led to creating this module. Thanks Alexander!
+
 ## Overview
 
 Let's say you are designing a Kivy app and you have several widgets that are not where you intented to put them or their placement or size is otherwise rather unexpected. It would be helpful if you could see exactly where the area of the widget is.
