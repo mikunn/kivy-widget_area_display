@@ -40,7 +40,7 @@ Or even shorter:
   a: self.show_area('r')
 ```
 
-Note that the 'a' in the previous examples is just a custom attribute and it can be named anything (as long as it is not already defined by Kivy). An attribute with some name is required, as (at least to my knowledge) kv language requires an attribute to be attached to a method.
+Note that the 'a' in the previous examples is just a custom property and it can be named anything (as long as it is not already defined by Kivy). An attribute with some name is required, as (at least to my knowledge) kv language requires an attribute to be attached to a method.
 
 ## Installation
 
