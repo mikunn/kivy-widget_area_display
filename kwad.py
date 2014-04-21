@@ -7,13 +7,13 @@ layout design errors
 '''
 
 __author__ = 'Mika Kunnas'
-__version__ = '1.0.3'
+__version__ = '1.0.4'
 
 from kivy.uix.widget import Widget
 from kivy.graphics.vertex_instructions import Rectangle
 from kivy.graphics.context_instructions import Color
 
-class InvalidColor(Exception):
+class InvalidColorError(Exception):
     pass
 
 def show_area(self, color='green', alpha=0.5, group=None):
@@ -45,7 +45,7 @@ def show_area(self, color='green', alpha=0.5, group=None):
             rgba += [alpha]
         
         except TypeError:
-            raise InvalidColor('No color match for color string "' + color + '"')
+            raise InvalidColorError('No color match for color string "' + color + '"')
     
     elif isinstance(color, (list, tuple)):
         if len(color) == 4:
