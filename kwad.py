@@ -40,7 +40,7 @@ def show_area(self, color='green', alpha=0.5, group=None):
         for name in color_names:
             if name.startswith(color):
                 rgba = color_names[name]
-                return
+                break
         
         try:
             rgba += [alpha]
