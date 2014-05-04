@@ -85,7 +85,7 @@ Pass in the color for the rectangle. It can be a string or a tuple/list. The fol
 
 The default color is green.
 
-You can also pass in just a substring of those, so `color='b'` sets the color to blue.
+You can also pass in just a substring (from the beginning of the string) of those, so `color='b'` sets the color to blue.
 
 If those are not enough and you want a more fine-tuned color, passing in a tuple or a list of either RGB or RGBA colors is possible. They work exactly as rgb and rgba attributes in kv language. If an RGBA list/tuple (4 values) is passed in, the `alpha` parameter is ignored.
 
